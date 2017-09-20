@@ -26,7 +26,7 @@ public class HelloAgent {
         adapter.start();
         mbs.registerMBean(adapter,adapterName);
 
-        int rmiPort = 1099;
+        int rmiPort = 10099;
         Registry registry = LocateRegistry.createRegistry(rmiPort);
 
         JMXServiceURL url = new JMXServiceURL("service:jmx:rmi:///jndi/rmi://localhost:"+rmiPort+"/"+domainName);

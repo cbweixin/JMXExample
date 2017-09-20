@@ -1,6 +1,6 @@
 package com.weixin.jmx.test;
 
-public interface HelloBean {
+public interface HelloMBean {
     public String getName();
     public void setName(String name);
     public void printHello();

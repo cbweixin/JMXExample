@@ -1,7 +1,7 @@
 package com.weixin.jmx.test;
 
 
-public class Hello implements HelloBean {
+public class Hello implements HelloMBean {
     private String name;
 
     @Override
