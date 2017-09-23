@@ -22,7 +22,7 @@ public class HelloAgent {
         mbs.registerMBean(new Hello(),helloName);
 
         ObjectName adapterName = new ObjectName(domainName+":name=htmladapter,port=18082");
-        HtmlAdaptorServer adapter = new HtmlAdaptorServer();
+        HtmlAdaptorServer adapter = new HtmlAdaptorServer(18082);
         adapter.start();
         mbs.registerMBean(adapter,adapterName);
 
